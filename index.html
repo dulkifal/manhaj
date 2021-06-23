@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,45 +17,108 @@
         <p id="para"></p>
     </div>
     <div class="student">
-        <h4>Name: Dulkifal</h4>
-        <h4>Add.No: 244</h4>
+        <h4 id="studentName">Name: </h4>
+        <h4 id="studentNum">Add.No: </h4>
         <h4>Class: Degree Final Year</h4>
     </div>
     <div>
 <table>
     <tr>
         <th id="a">No</th>
-        <th id="1">subName</th>
+        <th id="1">Subject</th>
         <th id="2">phase1</th>
         <th id="3">phase2</th>
         
     </tr>
     <tr>
         <th id="a1">1</th>
-        <th id="sub1">sub1</th>
-        <th id="sub11">0</th>
-        <th id="sub12">0</th>
+        <th id="hifz">Hifz & Tajveed</th>
+        <th id="hifz1">0</th>
+        <th id="hifz2">0</th>
         
     </tr>
     <tr>
         <th id="a2">2</th>
-        <th id="sub2">sub2</th>
-        <th id="sub21">0</th>
-        <th id="sub22">0</th>
+        <th id="tafseer">Tafseer Al-Quran</th>
+        <th id="tafseer1">0</th>
+        <th id="tafseer2">0</th>
         
     </tr>
     <tr>
         <th id="a3">3</th>
-        <th id="sub3">sub3</th>
-        <th id="sub31">0</th>
-        <th id="sub32">0</th>
+        <th id="hadees">Hadees</th>
+        <th id="hadees1">0</th>
+        <th id="hadees2">0</th>
         
     </tr>
     <tr>
         <th id="a4">4</th>
-        <th id="sub4">sub4</th>
-        <th id="sub41">0</th>
-        <th id="sub42">0</th>
+        <th id="fiqh">Fiqh</th>
+        <th id="fiqh1">0</th>
+        <th id="fiqh2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a5">5</th>
+        <th id="ufiqh">Usool Al-Fiqh</th>
+        <th id="ufiqh1">0</th>
+        <th id="ufiqh2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a6">6</th>
+        <th id="aqeeda">Aqeeda</th>
+        <th id="aqeeda1">0</th>
+        <th id="aqeeda2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a7">7</th>
+        <th id="balaga">Al-Balaga</th>
+        <th id="balaga1">0</th>
+        <th id="balaga2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a8">8</th>
+        <th id="adab">Al-Adab</th>
+        <th id="adab1">0</th>
+        <th id="adab2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a9">9</th>
+        <th id="urdu">Urdu</th>
+        <th id="urdu1">0</th>
+        <th id="urdu2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a10">10</th>
+        <th id="english">English</th>
+        <th id="english1">0</th>
+        <th id="english2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a11">11</th>
+        <th id="tc">T&C</th>
+        <th id="tc2">0</th>
+        <th id="tc1">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a12">12</th>
+        <th id="history">History</th>
+        <th id="history1">0</th>
+        <th id="history2">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a13">13</th>
+        <th id="it">IT</th>
+        <th id="it1">0</th>
+        <th id="it2">0</th>
         
     </tr>
 </table>
@@ -74,14 +137,35 @@
         .then((e) =>e.json()).then(e=>{
             
             console.log(e);
-            document.getElementById("sub11").innerHTML = e[1]
-            document.getElementById("sub12").innerHTML = e[2]
-            document.getElementById("sub21").innerHTML = e[3]
-            document.getElementById("sub22").innerHTML = e[4]
-            document.getElementById("sub31").innerHTML = e[5]
-            document.getElementById("sub32").innerHTML = e[6]
-            document.getElementById("sub41").innerHTML = e[7]
-            document.getElementById("sub42").innerHTML = e[8]
+            document.getElementById("studentNum").innerHTML = "Add.NO : " + e[0]
+            document.getElementById("studentName").innerHTML ="Name : " + e[1]
+            document.getElementById("hifz1").innerHTML = e[2]
+            document.getElementById("hifz2").innerHTML = e[3]
+            document.getElementById("tafseer1").innerHTML = e[4]
+            document.getElementById("tafseer2").innerHTML = e[5]
+            document.getElementById("hadees1").innerHTML = e[6]
+            document.getElementById("hadees2").innerHTML = e[7]
+            document.getElementById("fiqh1").innerHTML = e[8]
+            document.getElementById("fiqh2").innerHTML = e[9]
+            document.getElementById("ufiqh1").innerHTML = e[10]
+            document.getElementById("ufiqh2").innerHTML = e[11]
+            document.getElementById("aqeeda1").innerHTML = e[12]
+            document.getElementById("aqeeda2").innerHTML = e[13]
+            document.getElementById("balaga1").innerHTML = e[14]
+            document.getElementById("balaga2").innerHTML = e[15]
+            document.getElementById("adab1").innerHTML = e[16]
+            document.getElementById("adab2").innerHTML = e[17]
+            document.getElementById("urdu1").innerHTML = e[18]
+            document.getElementById("urdu2").innerHTML = e[19]
+            document.getElementById("english1").innerHTML = e[20]
+            document.getElementById("english2").innerHTML = e[21]
+            document.getElementById("tc1").innerHTML = e[22]
+            document.getElementById("tc2").innerHTML = e[23]
+            document.getElementById("history1").innerHTML = e[24]
+            document.getElementById("history2").innerHTML = e[25]
+            document.getElementById("it1").innerHTML = e[26]
+            document.getElementById("it2").innerHTML = e[27]
+
         
         });
     }
