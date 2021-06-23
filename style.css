@@ -1,0 +1,24 @@
+main{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: aquamarine;
+}
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+table{
+    width: 50%;
+}
+h1{
+    color: rebeccapurple;
+    background-color: aqua;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+}

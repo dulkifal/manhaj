@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Manhaj</title>
+</head>
+<body>
+    <h1>Manhaj Mark Portal</h1>
+    <p>Enter Your Add.No add Submit</p>
+    <div>
+        <input type="number"  value="" id="AddNum">
+        <button id="btn" >submit</button>
+        <p id="para"></p>
+    </div>
+    <div class="student">
+        <h4>Name: Dulkifal</h4>
+        <h4>Add.No: 244</h4>
+        <h4>Class: Degree Final Year</h4>
+    </div>
+    <div>
+<table>
+    <tr>
+        <th id="a">No</th>
+        <th id="1">subName</th>
+        <th id="2">phase1</th>
+        <th id="3">phase2</th>
+        
+    </tr>
+    <tr>
+        <th id="a1">1</th>
+        <th id="sub1">sub1</th>
+        <th id="sub11">0</th>
+        <th id="sub12">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a2">2</th>
+        <th id="sub2">sub2</th>
+        <th id="sub21">0</th>
+        <th id="sub22">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a3">3</th>
+        <th id="sub3">sub3</th>
+        <th id="sub31">0</th>
+        <th id="sub32">0</th>
+        
+    </tr>
+    <tr>
+        <th id="a4">4</th>
+        <th id="sub4">sub4</th>
+        <th id="sub41">0</th>
+        <th id="sub42">0</th>
+        
+    </tr>
+</table>
+        
+    </div>
+    <footer hidden >Fayis & Dulkifal</footer>
+
+    <script>
+    let but = document.querySelector("#btn");
+    let inp = document.querySelector("#AddNum");
+     
+    but.onclick = ()=>{
+        let id = inp.value
+    
+        fetch(`https://script.google.com/macros/s/AKfycbzn5plSY1gX2YVxoVeE3Xpkd5f5wKRsXwexeQuFkky2dj-nzrN6LDprT5PDdMdUpwpL/exec?id=${id}`)
+        .then((e) =>e.json()).then(e=>{
+            
+            console.log(e);
+            document.getElementById("sub11").innerHTML = e[1]
+            document.getElementById("sub12").innerHTML = e[2]
+            document.getElementById("sub21").innerHTML = e[3]
+            document.getElementById("sub22").innerHTML = e[4]
+            document.getElementById("sub31").innerHTML = e[5]
+            document.getElementById("sub32").innerHTML = e[6]
+            document.getElementById("sub41").innerHTML = e[7]
+            document.getElementById("sub42").innerHTML = e[8]
+        
+        });
+    }
+    </script>
+</body>
+
+</html>
