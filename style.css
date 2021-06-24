@@ -6,6 +6,9 @@ img{
     height: 80px;
     width: 80px;
 }
+.whitepart{
+    background-color: white;
+}
 body{
     background-color: rgb(206, 235, 225);
 }
