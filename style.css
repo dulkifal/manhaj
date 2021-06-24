@@ -75,7 +75,7 @@ footer{
 }
  @media (max-width: 350px)
 {table{
-    width: 90%;
+    width: 100%;
 }.first-div{
     width: 600px;
     
