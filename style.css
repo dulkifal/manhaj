@@ -69,7 +69,7 @@ footer{
     position: relative;
     bottom: 0px;
 }
-@media only screen and(max-width: 768px
+@media (max-width: 650px
 ){table{
     width: 90%;
 }.first-div{
