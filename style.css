@@ -80,8 +80,8 @@ footer{
     width: 600px;
     
 }.input-box{
-    height: 15px;
-    width: 50px;
+    position:relative;
+    left:10% ;
 }
 
 }
