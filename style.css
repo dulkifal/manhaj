@@ -65,6 +65,10 @@ h3{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+.student h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 footer{
     position: relative;
     bottom: 0px;
