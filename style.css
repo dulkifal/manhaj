@@ -1,0 +1,89 @@
+img{
+    display:flow-root ;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    height: 80px;
+    width: 80px;
+    
+}
+.whitepart{
+    background-color: white;
+    
+}
+body{
+    background-color: rgb(206, 235, 225);
+}
+
+.content-table{
+    position: relative;
+    left: 1%;
+    top: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+    
+}
+.content-table thead tr{
+    background-color: #067c29;
+    color: #f1f0f5;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.content-table th,
+.content-table td{
+    padding: 5px 5px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #cdd4d6;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+tr{
+    transition: all .2c ease-in;
+    cursor: pointer;
+}
+tr:hover{
+    transform: scale(1.1);
+}
+h1{
+    margin-top: -1px;
+    color: rebeccapurple;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+h3{
+    color: white;
+    background-color: #067c29;
+    text-align: center; 
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.student h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+}
+@media (max-width: 650px)
+{table{
+    width: 100%;
+} 
+}
+
+
+    
