@@ -17,12 +17,12 @@ body{
 
 .content-table{
     position: relative;
-    left: 1%;
+    left: 5%;
     top: 50%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: 75%;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -79,9 +79,9 @@ footer{
     position: relative;
     bottom: 0px;
 }
-@media (max-width: 650px)
+@media (max-width: 400px)
 {table{
-    width: 100%;
+    min-width: 350px;
 } 
 }
 
