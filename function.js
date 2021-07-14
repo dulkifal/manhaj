@@ -28,6 +28,15 @@ but.onclick = () => {
         "Name of Exam : " + e.Details.exam;
 
       let Marks = e.Marks;
+    let bTable = `<thead>
+      <tr>
+        <th id="a">No</th>
+        <th id="1">SUBJECT</th>
+        <th id="2">PHASE I</th>
+        <th id="3">TOTAL</th>
+      </tr>
+    </thead>`;
+      contTable.innerHTML = bTable;
       Marks.forEach((eachSub, i) => {
         let _tr = document.createElement("tr");
         _tr.append(tableTd(i + 1));
