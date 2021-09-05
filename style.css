@@ -54,9 +54,7 @@ tr{
     transition: all .2c ease-in;
     cursor: pointer;
 }
-tr:hover{
-    transform: scale(1.1);
-}
+
 h1{
     margin-top: -1px;
     color: rebeccapurple;
