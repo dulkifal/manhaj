@@ -77,10 +77,15 @@ footer{
     position: relative;
     bottom: 0px;
 }
-@media (max-width: 400px)
+@media (max-width: 550px)
 {table{
     min-width: 350px;
 } 
+.scroll{
+    width:360px;
+    height:280px;
+    overflow:scroll;
+}
 }
 
 
