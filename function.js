@@ -34,6 +34,13 @@ but.onclick = () => {
         <th id="1">SUBJECT</th>
         <th id="2">PHASE I</th>
         <th id="3">TOTAL</th>
+        <th id="4">PHASE II</th>
+        <th id="5">TOTAL</th>
+        <th id="6">SCORED</th>
+        <th id="7">G TOTAL</th>
+        <th id="8">WEIGHTAGE</th>
+        <th id="9">TOTAL WEIGHTAGE</th>
+         
       </tr>
     </thead>`;
       contTable.innerHTML = bTable;
@@ -43,6 +50,12 @@ but.onclick = () => {
         _tr.append(tableTd(eachSub.sub));
         _tr.append(tableTd(eachSub["P1"]));
         _tr.append(tableTd(eachSub["P1T"]));
+        _tr.append(tableTd(eachSub["P2"]));
+        _tr.append(tableTd(eachSub["P2T"]));
+        _tr.append(tableTd(eachSub["SCGT"]));
+        _tr.append(tableTd(eachSub["GT"]));
+        _tr.append(tableTd(Math.round(eachSub["WT"])));
+        _tr.append(tableTd(eachSub["TWT"]));
         contTable.append(_tr);
       });
     });
