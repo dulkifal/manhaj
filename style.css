@@ -77,6 +77,10 @@ footer{
     position: relative;
     bottom: 0px;
 }
+
+th{
+    text-align: left;
+}
 @media (max-width: 550px)
 {table{
     min-width: 350px;
